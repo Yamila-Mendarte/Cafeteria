@@ -1,0 +1,370 @@
+.titulobubba{ 
+
+	font-family: "Nunito", sans-serif;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	font-size:30px;
+
+ }
+
+.parrafos{
+
+	color: #242121;
+	font-family: "Noto Sans", sans-serif;
+	font-size:17px;
+	padding: 5px;
+	display:inline-block;
+	text-align:left; 
+	
+}
+
+.headerNosotros{
+
+	font-family: "Noto sans", sans-serif;
+	font-size: 50px;
+	text-decoration: none;
+	text-align: center;
+
+}
+
+.imagenesNosotros{
+
+	padding-right:20px;
+	padding-left: 13px;
+	justify-content: center;
+
+}
+
+.contenedorGrid{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5px;
+	padding: 10px;
+}
+
+.contenedorGrid > div {
+
+	justify-content: center;
+	padding: 20px 0;
+	font-size: 30px;
+
+}
+
+
+.img1{
+
+	grid-row-start: 1;
+	grid-row-end: 2;
+	
+}
+
+.img2{
+
+	grid-row-start: 1;
+	grid-row-end: 2;
+	
+}
+
+.img3{
+
+	grid-row-start: 1;
+	grid-row-end: 2;
+
+}
+
+
+.subtitulosForm{
+
+	font-family: "Nunito", sans-serif;
+	font-size: 15px;
+	color: #FFFFFF;
+	text-align:left;
+}
+
+.restoDelForm{
+
+	font-family:"Nunito", sans-serif;
+	color:#FFFFFF;
+	text-align:left;
+}
+
+form{
+
+	font-family:"Nunito", sans-serif;
+	padding:5px;
+    display: inline-block;
+    color:#FFFFFF;
+}
+
+.botones{
+
+	padding: 10px 15px;
+	font-size: 15px;
+	font-weight: 700;
+	border: 2px solid white;
+	border-radius:5px;
+	transform: translate(10px 20px);
+}
+
+.contacto{
+
+	font-family: "Nunito", sans-serif;
+	font-size: 25px;
+	text-align: center;
+	text-decoration: underline;
+
+}
+
+.divPadre{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000;
+	
+}
+
+.divHijo{
+
+	align-self: center;
+	margin-right: 30px; 
+	
+}
+
+.subtitulosMenu{
+
+	font-family:"Nunito", sans-serif;
+	font-size: 25px;
+	text-align: center;
+	text-decoration: underline;
+	
+}
+
+.parrafosMenu{
+
+	font-family: "Nunito", sans-serif;
+	font-size: 18px;
+
+}
+
+
+#grilla{
+
+	display: grid;
+	grid-template-areas:
+	 "header header"
+	 "footer footer";
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 15px;
+	grid-column-gap: 15px;
+	height: 100vh;
+	margin: 0; 
+
+}
+
+header {
+
+	grid-area: header;
+}
+
+
+.ulIndexBubba{
+
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #F19898;
+}
+
+.liIndexBubba{
+
+	display: inline-block;
+	width: 15%;
+	position: relative;
+	font-size:25px;
+
+}
+
+.menuPrincipal{
+
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	background: #FACFFF;
+	height: 45px;
+	transition: height 2s;
+
+}
+
+.menuPrincipal a{
+	flex: 1;
+	color:#FFFFFF;
+	display: flex;
+	color: #FFFFFF;	
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.padreImagenes{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.hijosImagenes{
+
+	align-self: center;
+	margin-right: 30px;
+	
+}
+
+
+.footer{
+
+	background-color: #121111;
+	width:100%;
+	height:300px; 
+	bottom:0;
+	position: relative;
+	text-align: center;
+	color:white;
+
+}
+
+
+.mapa {
+
+	align-items: left;
+}
+
+
+.header{
+
+	background-color:#000000;
+	width:100%;
+	height: 100px;
+	bottom:0;
+	position:relative;
+	text-align: center;
+	color:white;
+}
+
+.parrafoHeader{
+
+	color: white;
+	text-align:right;
+	font-size:15px;
+
+}
+
+
+.divTarjetas{
+
+	background-image: url(imagenes/taza-cafe.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #000000;
+	background-attachment: fixed;
+}
+
+.tarjetas{
+
+
+	font-family: "Nunito", sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+	text-align: center;
+	color:#FFFFFF;
+
+}
+
+
+.padreTarjetas{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.hijosTarjetas{
+
+	align-self: center;
+	margin-right: 30px;
+	
+}
+
+.titulosTarjetas{
+
+	font-family: "Nunito", sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: underline;
+	color:#FFFFFF;
+
+}
+
+
+@media screen and (max-width:1920px)
+
+{
+	body{
+
+		background-color:#F9CFFF;
+	}
+
+}
+
+@media screen and (max-width:1280px)
+
+{
+	body{
+
+		background-color:#FFFEBA;
+	}
+
+}
+
+
+@media screen and (max-width:800px)
+
+{
+	body{
+
+		background-color:#CCF6C8;
+	}
+
+}
+
+@media screen and (max-width:480px)
+
+{
+	body{
+
+		background-color: #FFCB9E;
+	}
+
+}
+
+@media screen and (max-width:375px)
+
+{
+	body{
+
+		background-color: #FFBFAF;
+	}
+
+}
