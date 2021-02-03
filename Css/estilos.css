@@ -53,28 +53,6 @@
 }
 
 
-.img1{
-
-	grid-row-start: 1;
-	grid-row-end: 2;
-	
-}
-
-.img2{
-
-	grid-row-start: 1;
-	grid-row-end: 2;
-	
-}
-
-.img3{
-
-	grid-row-start: 1;
-	grid-row-end: 2;
-
-}
-
-
 .subtitulosForm{
 
 	font-family: "Nunito", sans-serif;
@@ -138,9 +116,11 @@ form{
 .subtitulosMenu{
 
 	font-family:"Nunito", sans-serif;
-	font-size: 25px;
+	font-weight: 800px;
+	font-size: 30px;
 	text-align: center;
 	text-decoration: underline;
+	margin-top: 20px;
 	
 }
 
@@ -148,7 +128,31 @@ form{
 
 	font-family: "Nunito", sans-serif;
 	font-size: 18px;
+	margin-top: 8px;
+	text-align: center;
 
+}
+
+
+.padreImagenes{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.hijosImagenes{
+
+	align-self: center;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px
+	margin-left:5px;
+	
 }
 
 
@@ -211,24 +215,6 @@ header {
 }
 
 
-.padreImagenes{
-
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-
-}
-
-.hijosImagenes{
-
-	align-self: center;
-	margin-right: 30px;
-	
-}
-
-
 .footer{
 
 	background-color: #121111;
@@ -279,13 +265,17 @@ header {
 
 .tarjetas{
 
-
 	font-family: "Nunito", sans-serif;
 	font-size: 20px;
 	font-weight: 200;
 	text-align: center;
 	color:#FFFFFF;
+}
 
+
+.centrado{
+
+	text-align: center;
 }
 
 
@@ -301,8 +291,10 @@ header {
 
 .hijosTarjetas{
 
-	align-self: center;
+	align-items: center;
 	margin-right: 30px;
+	align-content: center;
+	margin: auto;
 	
 }
 
