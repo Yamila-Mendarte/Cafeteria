@@ -8,14 +8,56 @@
 
  }
 
+.contenedorPadre{
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	
+}
+
+.logo{
+	
+	width: 50%;
+	height: 110px;
+	align-content: center;
+	margin-top: 10px;
+	
+}
+
+.header{
+
+	background-color:#000000;
+	width:100%;
+	height: 145px;
+	bottom:0;
+	position:relative;
+	text-align: center;
+	color:white;
+	margin-bottom:10px;
+}
+
+.parrafoHeader{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	color: white;
+	text-align:right;
+	font-size:15px;	
+	font-family: "Noto Sans", sans-serif;
+
+}
+
 .parrafos{
 
-	color: #242121;
+	color: #4D4B4B;
 	font-family: "Noto Sans", sans-serif;
 	font-size:17px;
-	padding: 5px;
-	display:inline-block;
+	padding-bottom: 0px;
 	text-align:left; 
+	margin-top: 0px;
+
 	
 }
 
@@ -84,6 +126,7 @@ form{
 	border: 2px solid white;
 	border-radius:5px;
 	transform: translate(10px 20px);
+	color: #000000;
 }
 
 .contacto{
@@ -121,17 +164,73 @@ form{
 	text-align: center;
 	text-decoration: underline;
 	margin-top: 20px;
-	
+	color:#FFFFFF;
 }
 
 .parrafosMenu{
 
 	font-family: "Nunito", sans-serif;
 	font-size: 18px;
-	margin-top: 8px;
+	margin-top: 20px;
 	text-align: center;
+	color:#FFFFFF;
+}
+
+
+*{
+
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+
+.social {
+
+	position: fixed;
+	left: 0;
+	top: 200px;
+	z-index: 2000;
 
 }
+
+
+.social ul{
+
+
+	list-style: none 
+}
+
+
+
+.social ul li a {
+
+	display: inline-block;
+	color: #FFFFFF;
+	background:#000000;
+	padding:10px 15px;
+	text-decoration: none;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-transition:all 500ms ease;
+
+}
+
+
+.social ul li .icon-facebook{background: #3b5998;}
+.social ul li .icon-twitter{background: #08a0e9;}
+.social ul li .icon-instagram{background:#C13584;}
+.social ul li .icon-mail{background:#FE9FE7;}
+.social ul li .icon-linkedin{background:#0077B5;}
+
+
+.social ul li a:hover{
+
+	padding:10px 30px; 
+}
+
 
 
 .padreImagenes{
@@ -141,7 +240,6 @@ form{
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-
 
 }
 
@@ -154,27 +252,6 @@ form{
 	margin-left:5px;
 	
 }
-
-
-#grilla{
-
-	display: grid;
-	grid-template-areas:
-	 "header header"
-	 "footer footer";
-	grid-template-rows: 1fr 1fr;
-	grid-row-gap: 15px;
-	grid-column-gap: 15px;
-	height: 100vh;
-	margin: 0; 
-
-}
-
-header {
-
-	grid-area: header;
-}
-
 
 .ulIndexBubba{
 
@@ -214,7 +291,6 @@ header {
 
 }
 
-
 .footer{
 
 	background-color: #121111;
@@ -234,48 +310,26 @@ header {
 }
 
 
-.header{
-
-	background-color:#000000;
-	width:100%;
-	height: 100px;
-	bottom:0;
-	position:relative;
-	text-align: center;
-	color:white;
-}
-
-.parrafoHeader{
-
-	color: white;
-	text-align:right;
-	font-size:15px;
-
-}
-
-
-.divTarjetas{
-
-	background-image: url(imagenes/taza-cafe.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: #000000;
-	background-attachment: fixed;
-}
-
 .tarjetas{
 
+	align-items: start;
+	justify-content: center;
+	margin:auto;
 	font-family: "Nunito", sans-serif;
 	font-size: 20px;
 	font-weight: 200;
+	padding: 0px;
 	text-align: center;
 	color:#FFFFFF;
 }
 
+.divTarjetas{
 
-.centrado{
+	
+	align-items: center;
+	justify-content: center;
+	
 
-	text-align: center;
 }
 
 
@@ -286,6 +340,7 @@ header {
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
+
 }
 
 
@@ -294,7 +349,9 @@ header {
 	align-items: center;
 	margin-right: 30px;
 	align-content: center;
-	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 15px;
+
 	
 }
 
@@ -315,9 +372,15 @@ header {
 {
 	body{
 
-		background-color:#F9CFFF;
+		background-color:#000000;
+		color: #FFFFFF;
 	}
 
+	img{
+
+		margin-left: 8px;
+		margin-bottom: 10px;
+	}
 }
 
 @media screen and (max-width:1280px)
@@ -325,9 +388,15 @@ header {
 {
 	body{
 
-		background-color:#FFFEBA;
+		background-color:#000000;
+		color:#FFFFFF;
 	}
 
+	img{
+
+		margin-left: 8px;
+		margin-bottom: 10px;
+	}
 }
 
 
@@ -336,9 +405,15 @@ header {
 {
 	body{
 
-		background-color:#CCF6C8;
+		background-color:#000000;
+		color: #FFFFFF;
 	}
 
+	img{
+
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
 }
 
 @media screen and (max-width:480px)
@@ -346,7 +421,14 @@ header {
 {
 	body{
 
-		background-color: #FFCB9E;
+		background-color: #000000;
+		color:#FFFFFF;
+	}
+
+	img{
+
+		margin-left: 80px;
+		margin-bottom: 15px;
 	}
 
 }
@@ -356,7 +438,17 @@ header {
 {
 	body{
 
-		background-color: #FFBFAF;
+		background-color: #000000;
+		color: #FFFFFF;	
+	}
+
+	img{
+
+		margin-left: 6px;
+		margin-bottom: 10px;
+		width: 27%;
+		height: 110px;
+
 	}
 
 }
